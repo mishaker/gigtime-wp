@@ -255,6 +255,16 @@
 							<option value="yo">Yoruba</option>
 							<option value="za">Zhuang, Chuang</option>
 						</select>
+
+					</td>
+					<tr valign="top" class="field" id="hoppening_dtformat">
+					<th class="label" scope="row"><label for="hoppening_dtformat"><span class="alignleft"><?php _e('Date Time Format', 'hoppening'); ?></span></label></th>
+					<td>
+						<select id="hoppening_dtformat" name="hoppening_dtformat">
+							<option value="ab">Abkhaz</option>
+							<option value="aa">Afar</option>
+						</select>
+					
 					</td>
 				</tr>
 
