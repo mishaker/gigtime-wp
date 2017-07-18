@@ -223,8 +223,8 @@
 <label for="<?php echo $this->get_field_id('dtformat'); ?>"><?php _e( 'Date Time Format' , 'hoppening'); ?></label>
 </p>
 	<select style="    margin-bottom: 10px;" id="<?php echo $this->get_field_id('dtformat'); ?>" name="<?php echo $this->get_field_name('dtformat'); ?>" class="widefat">
-		<option value="eu">EU</option>
-		<option value="us">US</option>
+		<option value="eu">24 hours</option>
+		<option value="us">12 hours</option>
 	</select>
 <br>
 <script type="text/javascript">
