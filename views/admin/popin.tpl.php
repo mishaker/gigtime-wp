@@ -279,3 +279,8 @@
 	</div>
 
 </form>
+<style type="text/css">
+	#TB_ajaxContent {
+		height: 440px;
+	}
+</style>
