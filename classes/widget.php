@@ -39,6 +39,7 @@ class Hoppening_Widget extends WP_Widget {
 		$inverse_body = empty( $instance['inverse_body'] ) ? 'false' : esc_attr( $instance['inverse_body'] );
 		$default_view = empty( $instance['default_view'] ) ? 'list' : esc_attr( $instance['default_view'] );
 		$language = empty( $instance['language'] ) ? 'en' : esc_attr( $instance['language'] );
+		$dtformat = empty( $instance['dtformat'] ) ? 'eu' : esc_attr( $instance['dtformat'] );
 
 
 		echo $before_widget;
@@ -47,7 +48,7 @@ class Hoppening_Widget extends WP_Widget {
 			echo $before_title . esc_attr( $title ) . $after_title;
 		}
 
-		echo do_shortcode( '[hoppening user_id="' . $user_id . '" widget_type="' . $widget_type . '" width="' . $width . '" height="'. $height . '" bgcolor="' . esc_attr( $bg_color ) . '" font_color="' . esc_attr( $font_color ) . '" default_view="' . esc_attr( $default_view ) . '" inverse_header="' . esc_attr( $inverse_header ) . '" inverse_body="' . esc_attr( $inverse_body ) . '" language="' . $language .'"]' );
+		echo do_shortcode( '[hoppening user_id="' . $user_id . '" widget_type="' . $widget_type . '" width="' . $width . '" height="'. $height . '" bgcolor="' . esc_attr( $bg_color ) . '" font_color="' . esc_attr( $font_color ) . '" default_view="' . esc_attr( $default_view ) . '" inverse_header="' . esc_attr( $inverse_header ) . '" inverse_body="' . esc_attr( $inverse_body ) . '" language="' . $language .'"'.'" dtformat="' . $dtformat .'"'.']' );
 
 		echo $after_widget;
 	}
