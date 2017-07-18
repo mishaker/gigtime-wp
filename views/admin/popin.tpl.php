@@ -261,8 +261,8 @@
 					<th class="label" scope="row"><label for="hoppening_dtformat"><span class="alignleft"><?php _e('Date Time Format', 'hoppening'); ?></span></label></th>
 					<td>
 						<select id="hoppening_dtformat" name="hoppening_dtformat">
-							<option value="ab">Abkhaz</option>
-							<option value="aa">Afar</option>
+							<option value="eu">24 hours</option>
+							<option value="us">12 hours</option>
 						</select>
 					
 					</td>
