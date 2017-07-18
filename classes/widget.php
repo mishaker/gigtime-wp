@@ -59,7 +59,7 @@ class Hoppening_Widget extends WP_Widget {
 	 */
 	public function form( $instance ) {
 		//Defaults
-		$instance = wp_parse_args( (array) $instance, array( 'title' => false, 'widget_type' => 'artist', 'user_id' => false, 'width' => 250, 'height' => 300, 'bg_color' => '#ffffff', 'font_color' => '#000000', 'inverse_header' => false, 'inverse_body' => false, 'default_view' => 'list', 'language' => 'en' ));
+		$instance = wp_parse_args( (array) $instance, array( 'title' => false, 'widget_type' => 'artist', 'user_id' => false, 'width' => 250, 'height' => 300, 'bg_color' => '#ffffff', 'font_color' => '#000000', 'inverse_header' => false, 'inverse_body' => false, 'default_view' => 'list', 'language' => 'en', 'dtformat' => 'eu' ));
 		$title = esc_attr( $instance['title'] );
 
 		$tpl = Hoppening_Client::get_template( 'admin/widget' );
@@ -91,6 +91,7 @@ class Hoppening_Widget extends WP_Widget {
 		$instance['inverse_body'] = strip_tags( $new_instance['inverse_body'] );
 
 		$instance['language'] = strip_tags( $new_instance['language'] );
+		$instance['dtformat'] = strip_tags( $new_instance['dtformat'] );
 
 		return $instance;
 	}
