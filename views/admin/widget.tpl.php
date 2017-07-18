@@ -226,7 +226,7 @@
 		<option value="eu">EU</option>
 		<option value="us">US</option>
 	</select>
-
+<br>
 <script type="text/javascript">
 	jQuery(document).ready(function(){
 		document.getElementById("<?php echo $this->get_field_id('language'); ?>").value = "<?php echo $instance['language']; ?>"
