@@ -219,6 +219,10 @@
 		<option value="za">Zhuang, Chuang</option>
 	</select>
 
+<p><label for="<?php echo $this->get_field_id('dtformat'); ?>"><?php _e( 'Date Time Format' , 'hoppening'); ?></label></p>
+<p><input class="widefat" id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" type="text" value="<?php echo esc_attr( $instance['title'] ); ?>" /></p>
+
+
 <script type="text/javascript">
 	jQuery(document).ready(function(){
 		document.getElementById("<?php echo $this->get_field_id('language'); ?>").value = "<?php echo $instance['language']; ?>"
