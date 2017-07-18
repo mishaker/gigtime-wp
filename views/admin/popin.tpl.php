@@ -281,6 +281,6 @@
 </form>
 <style type="text/css">
 	#TB_ajaxContent {
-		height: 440px;
+		height: 440px !important;
 	}
 </style>
