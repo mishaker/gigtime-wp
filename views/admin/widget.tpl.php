@@ -222,7 +222,7 @@
 <p>
 <label for="<?php echo $this->get_field_id('dtformat'); ?>"><?php _e( 'Date Time Format' , 'hoppening'); ?></label>
 </p>
-	<select id="<?php echo $this->get_field_id('dtformat'); ?>" name="<?php echo $this->get_field_name('dtformat'); ?>" class="widefat">
+	<select style="margin-bottom: 10px;"> id="<?php echo $this->get_field_id('dtformat'); ?>" name="<?php echo $this->get_field_name('dtformat'); ?>" class="widefat">
 		<option value="eu">EU</option>
 		<option value="us">US</option>
 	</select>
@@ -230,6 +230,7 @@
 <script type="text/javascript">
 	jQuery(document).ready(function(){
 		document.getElementById("<?php echo $this->get_field_id('language'); ?>").value = "<?php echo $instance['language']; ?>"
+		document.getElementById("<?php echo $this->get_field_id('dtformat'); ?>").value = "<?php echo $instance['dtformat']; ?>"
 		document.getElementById("<?php echo $this->get_field_id('widget_type'); ?>").value = "<?php echo $instance['widget_type']; ?>"
 		jQuery("#<?php echo $this->get_field_id('widget_type'); ?>").on("change", function() {
 			if (jQuery(this).val() == "artist") {
