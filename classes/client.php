@@ -19,7 +19,8 @@ class Hoppening_Client {
 			'font_color' => '#000000',
 			'inverse_header' => '',
 			'inverse_body' => '',
-			'language' => 'en'
+			'language' => 'en',
+			'dtformat' => 'eu',
 		), $atts ) );
 
 		// Check if the required param is set
